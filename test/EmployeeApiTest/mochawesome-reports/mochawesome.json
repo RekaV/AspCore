@@ -1,0 +1,490 @@
+{
+  "reportTitle": "EmployeeApiTest",
+  "inlineAssets": false,
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2016-04-27T05:24:17.788Z",
+    "end": "2016-04-27T05:24:18.520Z",
+    "duration": 732,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "title": "",
+    "suites": [
+      {
+        "title": "EmployeeTest",
+        "suites": [],
+        "tests": [
+          {
+            "title": "Create empdetails",
+            "fullTitle": "EmployeeTest Create empdetails",
+            "timedOut": false,
+            "duration": 713,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.post(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters/\"</span>,<br>\t{<br>                <span class=\"hljs-string\">\"EmpName\"</span>:<span class=\"hljs-string\">\"SueSmith\"</span>,<span class=\"hljs-string\">\"Designation\"</span>:<span class=\"hljs-string\">\"Dev\"</span>,<span class=\"hljs-string\">\"Email\"</span>:<span class=\"hljs-string\">\"soma@kgfsl.com\"</span>,<span class=\"hljs-string\">\"Phone\"</span>:<span class=\"hljs-string\">\"898989898\"</span>,<span class=\"hljs-string\">\"Address\"</span>:<span class=\"hljs-string\">\"CBE\"</span>            },<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\t expect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+            "err": {
+              "name": "TypeError",
+              "message": "Cannot read property 'statusCode' of undefined",
+              "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:18:30<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+            },
+            "isRoot": false,
+            "uuid": "1c224a87-9521-4ab5-aa16-eac8a74cd88e",
+            "parentUUID": "cca4113e-7df0-444c-a5e6-bfb79bca844a",
+            "skipped": false
+          }
+        ],
+        "pending": [],
+        "root": false,
+        "_timeout": 2000,
+        "file": "\\spec\\EmployeeTest.js",
+        "uuid": "cca4113e-7df0-444c-a5e6-bfb79bca844a",
+        "fullFile": "D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js",
+        "passes": [],
+        "failures": [
+          {
+            "title": "Create empdetails",
+            "fullTitle": "EmployeeTest Create empdetails",
+            "timedOut": false,
+            "duration": 713,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.post(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters/\"</span>,<br>\t{<br>                <span class=\"hljs-string\">\"EmpName\"</span>:<span class=\"hljs-string\">\"SueSmith\"</span>,<span class=\"hljs-string\">\"Designation\"</span>:<span class=\"hljs-string\">\"Dev\"</span>,<span class=\"hljs-string\">\"Email\"</span>:<span class=\"hljs-string\">\"soma@kgfsl.com\"</span>,<span class=\"hljs-string\">\"Phone\"</span>:<span class=\"hljs-string\">\"898989898\"</span>,<span class=\"hljs-string\">\"Address\"</span>:<span class=\"hljs-string\">\"CBE\"</span>            },<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\t expect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+            "err": {
+              "name": "TypeError",
+              "message": "Cannot read property 'statusCode' of undefined",
+              "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:18:30<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+            },
+            "isRoot": false,
+            "uuid": "1c224a87-9521-4ab5-aa16-eac8a74cd88e",
+            "parentUUID": "cca4113e-7df0-444c-a5e6-bfb79bca844a",
+            "skipped": false
+          }
+        ],
+        "skipped": [],
+        "hasTests": true,
+        "hasSuites": false,
+        "totalTests": 1,
+        "totalPasses": 0,
+        "totalFailures": 1,
+        "totalPending": 0,
+        "totalSkipped": 0,
+        "hasPasses": false,
+        "hasFailures": true,
+        "hasPending": false,
+        "hasSkipped": false,
+        "duration": 713
+      },
+      {
+        "title": "EmployeeUpdateTest",
+        "suites": [],
+        "tests": [
+          {
+            "title": "Updating employee details",
+            "fullTitle": "EmployeeUpdateTest Updating employee details",
+            "timedOut": false,
+            "duration": 2,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.post(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters/\"</span>,<br>\t{<br>                <span class=\"hljs-string\">\"EmpID\"</span>:<span class=\"hljs-string\">\"7\"</span>,<span class=\"hljs-string\">\"EmpName\"</span>:<span class=\"hljs-string\">\"Somasundaram\"</span>,<span class=\"hljs-string\">\"Designation\"</span>:<span class=\"hljs-string\">\"Dev\"</span>,<span class=\"hljs-string\">\"Email\"</span>:<span class=\"hljs-string\">\"soma@kgfsl.com\"</span>,<span class=\"hljs-string\">\"Phone\"</span>:<span class=\"hljs-string\">\"898989898\"</span>,<span class=\"hljs-string\">\"Address\"</span>:<span class=\"hljs-string\">\"CBE\"</span>            },<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>\t<br>\t<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\t expect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+            "err": {
+              "name": "TypeError",
+              "message": "Cannot read property 'statusCode' of undefined",
+              "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:40:30<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+            },
+            "isRoot": false,
+            "uuid": "82be9537-ce91-481d-8df7-459f30e73cb5",
+            "parentUUID": "18d4df7f-53e8-4d5d-9c89-b1fe2f658056",
+            "skipped": false
+          }
+        ],
+        "pending": [],
+        "root": false,
+        "_timeout": 2000,
+        "file": "\\spec\\EmployeeTest.js",
+        "uuid": "18d4df7f-53e8-4d5d-9c89-b1fe2f658056",
+        "fullFile": "D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js",
+        "passes": [],
+        "failures": [
+          {
+            "title": "Updating employee details",
+            "fullTitle": "EmployeeUpdateTest Updating employee details",
+            "timedOut": false,
+            "duration": 2,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.post(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters/\"</span>,<br>\t{<br>                <span class=\"hljs-string\">\"EmpID\"</span>:<span class=\"hljs-string\">\"7\"</span>,<span class=\"hljs-string\">\"EmpName\"</span>:<span class=\"hljs-string\">\"Somasundaram\"</span>,<span class=\"hljs-string\">\"Designation\"</span>:<span class=\"hljs-string\">\"Dev\"</span>,<span class=\"hljs-string\">\"Email\"</span>:<span class=\"hljs-string\">\"soma@kgfsl.com\"</span>,<span class=\"hljs-string\">\"Phone\"</span>:<span class=\"hljs-string\">\"898989898\"</span>,<span class=\"hljs-string\">\"Address\"</span>:<span class=\"hljs-string\">\"CBE\"</span>            },<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>\t<br>\t<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\t expect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+            "err": {
+              "name": "TypeError",
+              "message": "Cannot read property 'statusCode' of undefined",
+              "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:40:30<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+            },
+            "isRoot": false,
+            "uuid": "82be9537-ce91-481d-8df7-459f30e73cb5",
+            "parentUUID": "18d4df7f-53e8-4d5d-9c89-b1fe2f658056",
+            "skipped": false
+          }
+        ],
+        "skipped": [],
+        "hasTests": true,
+        "hasSuites": false,
+        "totalTests": 1,
+        "totalPasses": 0,
+        "totalFailures": 1,
+        "totalPending": 0,
+        "totalSkipped": 0,
+        "hasPasses": false,
+        "hasFailures": true,
+        "hasPending": false,
+        "hasSkipped": false,
+        "duration": 2
+      },
+      {
+        "title": "EmployeeUpdateTest",
+        "suites": [],
+        "tests": [
+          {
+            "title": "delete employee details",
+            "fullTitle": "EmployeeUpdateTest delete employee details",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.delete(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters?EmpID=7\"</span>,<br>\t<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t        expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\texpect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+            "err": {
+              "name": "TypeError",
+              "message": "Cannot read property 'statusCode' of undefined",
+              "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:59:35<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+            },
+            "isRoot": false,
+            "uuid": "28b0f3f1-15e4-43ee-8126-731a4b45d6e8",
+            "parentUUID": "75a42ce1-44b0-43ab-877a-8568600c724b",
+            "skipped": false
+          }
+        ],
+        "pending": [],
+        "root": false,
+        "_timeout": 2000,
+        "file": "\\spec\\EmployeeTest.js",
+        "uuid": "75a42ce1-44b0-43ab-877a-8568600c724b",
+        "fullFile": "D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js",
+        "passes": [],
+        "failures": [
+          {
+            "title": "delete employee details",
+            "fullTitle": "EmployeeUpdateTest delete employee details",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.delete(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters?EmpID=7\"</span>,<br>\t<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t        expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\texpect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+            "err": {
+              "name": "TypeError",
+              "message": "Cannot read property 'statusCode' of undefined",
+              "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:59:35<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+            },
+            "isRoot": false,
+            "uuid": "28b0f3f1-15e4-43ee-8126-731a4b45d6e8",
+            "parentUUID": "75a42ce1-44b0-43ab-877a-8568600c724b",
+            "skipped": false
+          }
+        ],
+        "skipped": [],
+        "hasTests": true,
+        "hasSuites": false,
+        "totalTests": 1,
+        "totalPasses": 0,
+        "totalFailures": 1,
+        "totalPending": 0,
+        "totalSkipped": 0,
+        "hasPasses": false,
+        "hasFailures": true,
+        "hasPending": false,
+        "hasSkipped": false,
+        "duration": 1
+      },
+      {
+        "title": "EmployeeUpdateTest",
+        "suites": [],
+        "tests": [
+          {
+            "title": "get all employees",
+            "fullTitle": "EmployeeUpdateTest get all employees",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.get(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters\"</span>)<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t        expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\texpect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+            "err": {
+              "name": "TypeError",
+              "message": "Cannot read property 'statusCode' of undefined",
+              "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:72:35<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+            },
+            "isRoot": false,
+            "uuid": "88487e9f-b232-4bec-ae6c-5d21ea4d1de1",
+            "parentUUID": "4f83b3cb-ba6c-4b6d-9db0-45654b2618c5",
+            "skipped": false
+          }
+        ],
+        "pending": [],
+        "root": false,
+        "_timeout": 2000,
+        "file": "\\spec\\EmployeeTest.js",
+        "uuid": "4f83b3cb-ba6c-4b6d-9db0-45654b2618c5",
+        "fullFile": "D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js",
+        "passes": [],
+        "failures": [
+          {
+            "title": "get all employees",
+            "fullTitle": "EmployeeUpdateTest get all employees",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.get(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters\"</span>)<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t        expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\texpect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+            "err": {
+              "name": "TypeError",
+              "message": "Cannot read property 'statusCode' of undefined",
+              "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:72:35<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+            },
+            "isRoot": false,
+            "uuid": "88487e9f-b232-4bec-ae6c-5d21ea4d1de1",
+            "parentUUID": "4f83b3cb-ba6c-4b6d-9db0-45654b2618c5",
+            "skipped": false
+          }
+        ],
+        "skipped": [],
+        "hasTests": true,
+        "hasSuites": false,
+        "totalTests": 1,
+        "totalPasses": 0,
+        "totalFailures": 1,
+        "totalPending": 0,
+        "totalSkipped": 0,
+        "hasPasses": false,
+        "hasFailures": true,
+        "hasPending": false,
+        "hasSkipped": false,
+        "duration": 1
+      }
+    ],
+    "tests": [],
+    "pending": [],
+    "root": true,
+    "_timeout": 2000,
+    "uuid": "6cbeb556-009a-4fcc-9f85-6d670eedcb68",
+    "fullFile": "",
+    "file": "",
+    "passes": [],
+    "failures": [],
+    "skipped": [],
+    "hasTests": false,
+    "hasSuites": true,
+    "totalTests": 0,
+    "totalPasses": 0,
+    "totalFailures": 0,
+    "totalPending": 0,
+    "totalSkipped": 0,
+    "hasPasses": false,
+    "hasFailures": false,
+    "hasPending": false,
+    "hasSkipped": false,
+    "duration": 0,
+    "rootEmpty": true
+  },
+  "allTests": [
+    {
+      "title": "Create empdetails",
+      "fullTitle": "EmployeeTest Create empdetails",
+      "timedOut": false,
+      "duration": 713,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.post(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters/\"</span>,<br>\t{<br>                <span class=\"hljs-string\">\"EmpName\"</span>:<span class=\"hljs-string\">\"SueSmith\"</span>,<span class=\"hljs-string\">\"Designation\"</span>:<span class=\"hljs-string\">\"Dev\"</span>,<span class=\"hljs-string\">\"Email\"</span>:<span class=\"hljs-string\">\"soma@kgfsl.com\"</span>,<span class=\"hljs-string\">\"Phone\"</span>:<span class=\"hljs-string\">\"898989898\"</span>,<span class=\"hljs-string\">\"Address\"</span>:<span class=\"hljs-string\">\"CBE\"</span>            },<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\t expect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+      "err": {
+        "name": "TypeError",
+        "message": "Cannot read property 'statusCode' of undefined",
+        "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:18:30<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+      },
+      "isRoot": false,
+      "uuid": "929471a7-d0c8-4063-b8f4-ea805bf5c653",
+      "parentUUID": "cca4113e-7df0-444c-a5e6-bfb79bca844a",
+      "skipped": false
+    },
+    {
+      "title": "Updating employee details",
+      "fullTitle": "EmployeeUpdateTest Updating employee details",
+      "timedOut": false,
+      "duration": 2,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.post(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters/\"</span>,<br>\t{<br>                <span class=\"hljs-string\">\"EmpID\"</span>:<span class=\"hljs-string\">\"7\"</span>,<span class=\"hljs-string\">\"EmpName\"</span>:<span class=\"hljs-string\">\"Somasundaram\"</span>,<span class=\"hljs-string\">\"Designation\"</span>:<span class=\"hljs-string\">\"Dev\"</span>,<span class=\"hljs-string\">\"Email\"</span>:<span class=\"hljs-string\">\"soma@kgfsl.com\"</span>,<span class=\"hljs-string\">\"Phone\"</span>:<span class=\"hljs-string\">\"898989898\"</span>,<span class=\"hljs-string\">\"Address\"</span>:<span class=\"hljs-string\">\"CBE\"</span>            },<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>\t<br>\t<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\t expect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+      "err": {
+        "name": "TypeError",
+        "message": "Cannot read property 'statusCode' of undefined",
+        "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:40:30<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+      },
+      "isRoot": false,
+      "uuid": "57726fa8-cbd0-4d90-a3d0-d92ee522fd76",
+      "parentUUID": "18d4df7f-53e8-4d5d-9c89-b1fe2f658056",
+      "skipped": false
+    },
+    {
+      "title": "delete employee details",
+      "fullTitle": "EmployeeUpdateTest delete employee details",
+      "timedOut": false,
+      "duration": 1,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.delete(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters?EmpID=7\"</span>,<br>\t<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t        expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\texpect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+      "err": {
+        "name": "TypeError",
+        "message": "Cannot read property 'statusCode' of undefined",
+        "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:59:35<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+      },
+      "isRoot": false,
+      "uuid": "39626938-b901-4cc1-b77d-6ebfb95e3581",
+      "parentUUID": "75a42ce1-44b0-43ab-877a-8568600c724b",
+      "skipped": false
+    },
+    {
+      "title": "get all employees",
+      "fullTitle": "EmployeeUpdateTest get all employees",
+      "timedOut": false,
+      "duration": 1,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.get(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters\"</span>)<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t        expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\texpect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+      "err": {
+        "name": "TypeError",
+        "message": "Cannot read property 'statusCode' of undefined",
+        "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:72:35<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+      },
+      "isRoot": false,
+      "uuid": "1d77ed39-7deb-4c1d-8227-ff06f8e0b1c8",
+      "parentUUID": "4f83b3cb-ba6c-4b6d-9db0-45654b2618c5",
+      "skipped": false
+    }
+  ],
+  "allPending": [],
+  "allPasses": [],
+  "allFailures": [
+    {
+      "title": "Create empdetails",
+      "fullTitle": "EmployeeTest Create empdetails",
+      "timedOut": false,
+      "duration": 713,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.post(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters/\"</span>,<br>\t{<br>                <span class=\"hljs-string\">\"EmpName\"</span>:<span class=\"hljs-string\">\"SueSmith\"</span>,<span class=\"hljs-string\">\"Designation\"</span>:<span class=\"hljs-string\">\"Dev\"</span>,<span class=\"hljs-string\">\"Email\"</span>:<span class=\"hljs-string\">\"soma@kgfsl.com\"</span>,<span class=\"hljs-string\">\"Phone\"</span>:<span class=\"hljs-string\">\"898989898\"</span>,<span class=\"hljs-string\">\"Address\"</span>:<span class=\"hljs-string\">\"CBE\"</span>            },<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\t expect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+      "err": {
+        "name": "TypeError",
+        "message": "Cannot read property 'statusCode' of undefined",
+        "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:18:30<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+      },
+      "isRoot": false,
+      "uuid": "412d1224-1be0-4b4f-87bb-e4e36ad800ab",
+      "parentUUID": "cca4113e-7df0-444c-a5e6-bfb79bca844a",
+      "skipped": false
+    },
+    {
+      "title": "Updating employee details",
+      "fullTitle": "EmployeeUpdateTest Updating employee details",
+      "timedOut": false,
+      "duration": 2,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.post(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters/\"</span>,<br>\t{<br>                <span class=\"hljs-string\">\"EmpID\"</span>:<span class=\"hljs-string\">\"7\"</span>,<span class=\"hljs-string\">\"EmpName\"</span>:<span class=\"hljs-string\">\"Somasundaram\"</span>,<span class=\"hljs-string\">\"Designation\"</span>:<span class=\"hljs-string\">\"Dev\"</span>,<span class=\"hljs-string\">\"Email\"</span>:<span class=\"hljs-string\">\"soma@kgfsl.com\"</span>,<span class=\"hljs-string\">\"Phone\"</span>:<span class=\"hljs-string\">\"898989898\"</span>,<span class=\"hljs-string\">\"Address\"</span>:<span class=\"hljs-string\">\"CBE\"</span>            },<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>\t<br>\t<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\t expect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+      "err": {
+        "name": "TypeError",
+        "message": "Cannot read property 'statusCode' of undefined",
+        "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:40:30<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+      },
+      "isRoot": false,
+      "uuid": "0f0aac5a-4550-40d3-a38f-bcfc46af5902",
+      "parentUUID": "18d4df7f-53e8-4d5d-9c89-b1fe2f658056",
+      "skipped": false
+    },
+    {
+      "title": "delete employee details",
+      "fullTitle": "EmployeeUpdateTest delete employee details",
+      "timedOut": false,
+      "duration": 1,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.delete(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters?EmpID=7\"</span>,<br>\t<br> {<br>\theaders: {<br>\t\t<span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span><br>\t},<br>})<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t        expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\texpect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+      "err": {
+        "name": "TypeError",
+        "message": "Cannot read property 'statusCode' of undefined",
+        "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:59:35<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+      },
+      "isRoot": false,
+      "uuid": "2dbb35fd-0bde-4898-a9d8-b6d32cd00c9e",
+      "parentUUID": "75a42ce1-44b0-43ab-877a-8568600c724b",
+      "skipped": false
+    },
+    {
+      "title": "get all employees",
+      "fullTitle": "EmployeeUpdateTest get all employees",
+      "timedOut": false,
+      "duration": 1,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">5000</span>);<br><span class=\"hljs-keyword\">return</span> chakram.get(<span class=\"hljs-string\">\"http://Localhost:5000/api/EmployeeMasters\"</span>)<br>.then(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">response</span>)</span>{<br>\t<span class=\"hljs-comment\">//console.log(response.body);</span><br>\t        expect(response).to.have.status(<span class=\"hljs-number\">200</span>);<br>\texpect(response).to.have.header(<span class=\"hljs-string\">'content-type'</span>, <span class=\"hljs-regexp\">/json/</span>);<br>})<br><span class=\"hljs-keyword\">return</span> chakram.wait();",
+      "err": {
+        "name": "TypeError",
+        "message": "Cannot read property 'statusCode' of undefined",
+        "stack": "TypeError: Cannot read property 'statusCode' of undefined<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chakram\\lib\\assertions\\statuscode.js:15:44)<br>    at ctx.(anonymous function) (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:292:33)<br>    at null.&lt;anonymous&gt; (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:251:21)<br>    at ctx.(anonymous function) [as status] (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\spec\\EmployeeTest.js:72:35<br>    at _fulfilled (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:834:54)<br>    at self.promiseDispatch.done (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:863:30)<br>    at Promise.promise.promiseDispatch (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:796:13)<br>    at D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:556:49<br>    at runSingle (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:137:13)<br>    at flush (D:\\VisualStudioCore\\SOURCE\\VisualCore\\test\\EmployeeApiTest\\node_modules\\q\\q.js:125:13)"
+      },
+      "isRoot": false,
+      "uuid": "b141caec-bd95-4fe8-b42a-6b0468cbe453",
+      "parentUUID": "4f83b3cb-ba6c-4b6d-9db0-45654b2618c5",
+      "skipped": false
+    }
+  ],
+  "copyrightYear": 2016
+}
